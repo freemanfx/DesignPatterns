@@ -3,7 +3,6 @@ package adapter.objectadapter;
 import adapter.CelsiusFahrenheitAdapter;
 import adapter.CelsiusTemperature;
 import adapter.FahrenheitTemperature;
-import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -22,5 +21,6 @@ public class CelsiusFahrenheitAdapterImplTest {
 
         int expectedFahrenheitTemperature = 122;
         assertEquals(expectedFahrenheitTemperature, fahrenheitTemperature.getFahrenheitDegrees());
+        assertEquals(celsiusTemperature, celsiusFahrenheitAdapter.getCelsiusTemperature());
     }
 }
