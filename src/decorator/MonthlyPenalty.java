@@ -1,6 +1,6 @@
 package decorator;
 
-public class MonthlyPenalty extends PenaltyCostCalculatorDecorator{
+public class MonthlyPenalty extends PenaltyCostCalculatorDecorator {
     private static final double INTEREST = 0.01;
     private final int months;
 
@@ -14,7 +14,7 @@ public class MonthlyPenalty extends PenaltyCostCalculatorDecorator{
         return super.calculate() + getPenalty();
     }
 
-    private double getPenalty(){
+    private double getPenalty() {
         return months * INTEREST;
     }
 }

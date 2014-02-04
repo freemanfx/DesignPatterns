@@ -2,7 +2,7 @@ package bridge;
 
 /**
  * Refined Abstraction
- *
+ * <p/>
  * If I decide I want to further extend the remote I can
  */
 

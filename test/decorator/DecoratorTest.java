@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class DecoratorTest {
     @Test
-    public void testDecorator(){
+    public void testDecorator() {
         CostCalculator invoiceNotPaid = new NormalCostCalculator(100);
         Assertions.assertThat(invoiceNotPaid.calculate()).isEqualTo(100.006);
 
@@ -15,7 +15,7 @@ public class DecoratorTest {
 
         System.out.println(invoiceNotPaid.calculate());
 
-        CostCalculator totalToPay = new DailyPenalty(new MonthlyPenalty(new NormalCostCalculator(100),6), 10);
+        CostCalculator totalToPay = new DailyPenalty(new MonthlyPenalty(new NormalCostCalculator(100), 6), 10);
         System.out.println(totalToPay.calculate());
     }
 }

@@ -8,7 +8,7 @@ package bridge;
 
 public class TVDevice extends EntertainmentDevice {
 
-    public TVDevice(int newDeviceState, int newMaxSetting){
+    public TVDevice(int newDeviceState, int newMaxSetting) {
 
         deviceState = newDeviceState;
 

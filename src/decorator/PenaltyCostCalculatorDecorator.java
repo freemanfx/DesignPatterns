@@ -1,11 +1,11 @@
 package decorator;
 
 
-public abstract class PenaltyCostCalculatorDecorator implements CostCalculator{
+public abstract class PenaltyCostCalculatorDecorator implements CostCalculator {
 
     private final CostCalculator costCalculator;
 
-    public PenaltyCostCalculatorDecorator(CostCalculator costCalculator){
+    public PenaltyCostCalculatorDecorator(CostCalculator costCalculator) {
         this.costCalculator = costCalculator;
     }
 
